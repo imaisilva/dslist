@@ -13,12 +13,6 @@ import jakarta.persistence.Table;
 @Table(name = "tb_game")
 public class Game {
 	
-	/*@ManyToMany
-	@JoinTable(name = "tb_belonging",
-			joinColumns = @JoinColumn(name = "tb_game"),
-			inverseJoinColumns = @JoinColumn(name = "tb_game_list")
-	)*/
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
